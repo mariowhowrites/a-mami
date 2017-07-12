@@ -1,0 +1,135 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+/*
+	Archetype by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+*/
+
+/* List */
+
+	ul {
+		&.features {
+			li {
+				overflow: hidden;
+
+				h3 {
+					display: inline-block;
+					float: left;
+				}
+
+				p {
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+/* Posts */
+
+	.posts {
+		overflow: hidden;
+
+		.post {
+			overflow: hidden;
+
+			.image {
+				display: inline-block;
+				float: left;
+				width: 35%;
+			}
+
+			.content {
+				display: inline-block;
+				width: 55%;
+			}
+		}
+
+		> * {
+			display: inline-block;
+			float: left;
+		}
+	}
+
+/* Wrapper */
+
+	.wrapper {
+		&.cta {
+			@include banner-bg('../../images/cta.jpg', true);
+
+			> .inner {
+				overflow: hidden;
+
+				> * {
+					float: left;
+					display: inline-block;
+				}
+			}
+		}
+
+		&.sidebar {
+			> .inner {
+				overflow: hidden;
+			}
+
+			&.left {
+				> .inner {
+					> .content {
+						float: right;
+					}
+
+					> .sidebar {
+						float: right;
+					}
+				}
+			}
+
+			&.right {
+				> .inner {
+					> .content {
+						float: left;
+					}
+
+					> .sidebar {
+						float: left;
+					}
+				}
+			}
+		}
+	}
+
+/* Banner */
+
+	#banner {
+		@include banner-bg('../../images/banner.jpg');
+
+		.content {
+			> .inner {
+				overflow: hidden;
+
+				header {
+					float: left;
+				}
+			}
+		}
+	}
+
+/* Footer */
+
+	#footer {
+		@include banner-bg('../../images/banner.jpg');
+
+		.content {
+			> .inner {
+				overflow: hidden;
+
+				> * {
+					display: inline-block;
+					float: left;
+				}
+			}
+		}
+	}
