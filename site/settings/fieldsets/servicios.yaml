@@ -1,0 +1,10 @@
+taxonomies: false
+title: Servicios
+create_title: ""
+fields:
+  nombre:
+    type: text
+    display: Nombre
+  descripcion:
+    type: textarea
+    display: Descripción

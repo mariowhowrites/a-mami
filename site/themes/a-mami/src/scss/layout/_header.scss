@@ -42,7 +42,8 @@
 		h1 {
 			@include icon;
 			color: _palette(accent4, fg-bold);
-			display: inline-block;
+			display: flex;
+			align-items: center;
 			height: inherit;
 			line-height: inherit;
 			margin-left: 1.5em;
@@ -58,11 +59,11 @@
 				background: _palette(accent4, fg-bold);
 				border-radius: 100%;
 				color: _palette(accent1, bg);
-				content: '\f1b3';
+				content: url(/site/themes/a-mami/images/favicon-22x22.png);
 				display: inline-block;
 				font-size: 0.9em;
 				height: 2em;
-				line-height: 2em;
+				line-height: 3em;
 				margin-left: -0.5em;
 				margin-right: 0.5em;
 				text-align: center;

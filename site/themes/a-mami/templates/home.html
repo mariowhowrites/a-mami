@@ -1,6 +1,10 @@
-<div class="container">
-    <h1>{{ title }} Wow!</h1>
-    <hr/>
-    {{ content }}
-</div>
+{{ partial src="components/banner" }}
 
+<!-- Features List -->
+{{ partial src="components/features-list" :list="homepage_features" }}
+
+<!-- Home Call to Action -->
+{{ partial src="components/home-cta" :home_cta="home_cta" }}
+
+<!-- Recent Posts -->
+{{ partial src="components/recent-posts" collection="productos" limit="4" }}

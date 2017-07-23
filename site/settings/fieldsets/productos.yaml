@@ -1,0 +1,19 @@
+taxonomies: false
+title: Productos
+create_title: ""
+fields:
+  nombre:
+    type: text
+    display: Nombre
+    localizable: true
+  imagen:
+    type: assets
+    display: Imagen
+    container: main
+    folder: /
+  precio:
+    type: text
+    display: Precio
+  cta:
+    type: text
+    display: Texto de Botón

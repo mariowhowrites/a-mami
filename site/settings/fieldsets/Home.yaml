@@ -1,0 +1,42 @@
+taxonomies: false
+title: Home
+create_title: ""
+hide: true
+fields:
+  content:
+    type: markdown
+    display: Content
+    localizable: true
+  homepage_list:
+    type: grid
+    display: Homepage List
+    fields:
+      nombre:
+        type: text
+        display: Nombre
+        width: 25
+      descripcion:
+        type: textarea
+        display: Descripción
+        width: 50
+    mode: table
+    localizable: true
+  homepage_features:
+    type: replicator
+    display: Homepage_features
+    sets:
+      feature:
+        display: feature
+        fields:
+          nombre:
+            type: text
+            display: Nombre
+            width: 50
+          icon:
+            type: text
+            display: Icon
+            width: 50
+          descripcion:
+            type: textarea
+            display: Descripcion
+    localizable: true
