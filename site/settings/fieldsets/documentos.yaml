@@ -2,10 +2,12 @@ taxonomies: false
 title: Documentos
 create_title: ""
 fields:
-  nombre_de_documento:
-    type: text
-    display: Nombre de Documento
   link_de_documento:
     type: text
     display: Link de Documento
     instructions: Un link a la documento
+    localizable: true
+  sumario:
+    type: textarea
+    display: Sumario de Documento
+    localizable: true
